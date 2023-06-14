@@ -59,7 +59,7 @@ export default function Home() {
 <div className='items-center flex-1 mx-auto searchbar'>
   <input type="text" placeholder="Search the Movie" name='search' className="py-2 pl-4 pr-4 border border-gray-300 rounded-lg w-96 focus:outline-none focus:border-blue-500" onChange={(e: any) => setSearchValue(e.target.value)}/>
 </div>
-      <div className='flex flex-2 main-content'>
+      <div className='flex flex-wrap flex-2 main-content'>
         <div className='my-1 flex-4'> 
           <FunctionalComp ChangeHandler ={sortChangeHandler}  />
         </div>
